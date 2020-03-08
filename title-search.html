@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    </head>
+    <body style="font-family:'Ubuntu', sans-serif;">
+        <div class="container-fluid">
+            <div class="row bg-warning">
+                <div class="col-1 m-2 ml-3">
+                    <img src="resources/logo1.png">
+                </div>
+                <div class="col-12 col-sm-12 col-md-1 col-lg-1 col-xl-6 m-3 my-4">
+                    <a href="index.html" class="btn btn-lg btn-danger"><b>HOME</b></a>
+                </div>
+                <div class="col m-3 my-4">
+                    <form class="form-inline">
+                        <input id="title" class="form-control form-control-lg mr-sm-3" type="search" placeholder="Search" aria-label="Search">
+                        <select id="selectChoice" class="custom-select custom-select-lg mr-3">
+                            <option selected value="1">Search by Title</option>
+                            <option value="2">General Search</option>
+                          </select>
+                        <button id="searchBtn" class="btn btn-lg btn-danger my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row bg-light">
+                <div class="col-12 col-lg-4">
+                    <div class="col-12 my-4">
+                        <div id="moviePoster"> </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8">
+                    <div class="row">
+                        <div class="col-12 my-4">
+                            <div class="display-4 font-weight-bold" id="movieName"> </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 my-3">
+                            <label class="text-danger h4 font-weight-bold">Year: </label><span id="movieYear" class="h4"> </span>
+                        </div>
+                        <div class="col-4 my-3">
+                            <label class="text-danger h4 font-weight-bold">Rated: </label><span id="movieRated" class="h4"> </span>
+                        </div>
+                        <div class="col-4 my-3">
+                            <label class="text-danger h4 font-weight-bold">Runtime: </label><span id="movieRuntime" class="h4"> </span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 my-3">
+                            <label class="text-danger h4 font-weight-bold">Genre: </label><span id="movieGenre" class="h4"> </span>
+                        </div>
+                        <div class="col-4 my-3">
+                            <label class="text-danger h4 font-weight-bold">Director: </label><span id="movieDirector" class="h4"> </span>
+                        </div>
+                        <div class="col-4 my-3">
+                            <label class="text-danger h4 font-weight-bold">Type: </label><small id="movieType" class="h4"> </small>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 my-3">
+                            <label class="text-danger h4 font-weight-bold">Released in: </label><span id="movieReleased" class="h4"> </span>
+                        </div>
+                        <div class="col-4 my-3">
+                            <label class="text-danger h4 font-weight-bold">Country: </label><span id="movieCountry" class="h4"> </span>
+                        </div>
+                        <div class="col-4 my-3">
+                            <label class="text-danger h4 font-weight-bold">Language: </label><span id="movieLanguage" class="h4"> </span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 my-3">
+                            <label class="text-danger h4 font-weight-bold">Writer: </label><span id="movieWriter" class="h4"> </span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 my-3">
+                            <label class="text-danger h4 font-weight-bold">Actors: </label><span id="movieActors" class="h4"> </span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 my-3">
+                            <label class="text-danger h4 font-weight-bold">Plot: </label><span id="moviePlot" class="h4"> </span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 my-3">
+                            <img style="width: 30px; margin-bottom: 12px;" src="resources/rotten-tomatoes.png"><label class="text-danger h4 font-weight-bold ml-2">Rotten Tomatoes: </label><span id="movieRottenTomatoes" class="h4"> </span>
+                        </div>
+                        <div class="col-4 my-3">
+                            <img style="width: 60px; margin-bottom: 10px;" src="resources/imdb.png"><label class="text-danger h4 font-weight-bold ml-2">Imdb: </label><span id="movieImdb" class="h4"> </span>
+                        </div>
+                        <div class="col-4 my-3">
+                            <img style="width: 35px; margin-bottom: 10px;" src="resources/metascore.png"><label class="text-danger h4 font-weight-bold ml-2">Metacritic Score: </label><span id="movieMetascore" class="h4"> </span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 my-3">
+                            <label class="text-danger h4 font-weight-bold">Awards: </label><span id="movieAwards" class="h4"> </span>
+                        </div>
+                        <div class="col-6 my-3">
+                            <label class="text-danger h4 font-weight-bold">DVD: </label><span id="movieDvd" class="h4"> </span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 my-3">
+                            <label class="text-danger h4 font-weight-bold">Production: </label><span id="movieProduction" class="h4"> </span>
+                        </div>
+                        <div class="col-6 my-3">
+                            <label class="text-danger h4 font-weight-bold">Box-Office: </label><span id="movieBoxOffice" class="h4"> </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="title-search.js"></script>
+    </body>
+</html>
